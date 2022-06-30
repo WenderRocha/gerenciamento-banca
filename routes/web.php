@@ -28,6 +28,30 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/analysis', function () {
+    
+})->middleware(['auth', 'verified'])->name('analysis.index');
+
+Route::get('/wallet', function () {
+    
+})->middleware(['auth', 'verified'])->name('wallet.index');
+
+Route::get('/transaction', function () {
+    
+})->middleware(['auth', 'verified'])->name('transaction.index');
+
+Route::get('/trades', function () {
+    
+})->middleware(['auth', 'verified'])->name('trade.index');
+
+Route::get('/book', function () {
+    
+})->middleware(['auth', 'verified'])->name('book.index');
+
+Route::get('/support', function () {
+    
+})->middleware(['auth', 'verified'])->name('support.index');
+
 Route::get('/components/buttons', function () {
     return Inertia::render('Components/Buttons');
 })->middleware(['auth', 'verified'])->name('components.buttons');

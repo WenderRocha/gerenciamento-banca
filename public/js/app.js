@@ -22471,6 +22471,14 @@ __webpack_require__.r(__webpack_exports__);
       PerfectScrollbar: _Components_PerfectScrollbar__WEBPACK_IMPORTED_MODULE_0__["default"],
       SidebarLink: _Components_Sidebar_SidebarLink__WEBPACK_IMPORTED_MODULE_1__["default"],
       DashboardIcon: _Components_Icons_outline__WEBPACK_IMPORTED_MODULE_2__.DashboardIcon,
+      SecureIcon: _Components_Icons_outline__WEBPACK_IMPORTED_MODULE_2__.SecureIcon,
+      CogIcon: _Components_Icons_outline__WEBPACK_IMPORTED_MODULE_2__.CogIcon,
+      WalletsIcon: _Components_Icons_outline__WEBPACK_IMPORTED_MODULE_2__.WalletsIcon,
+      TransactionIcon: _Components_Icons_outline__WEBPACK_IMPORTED_MODULE_2__.TransactionIcon,
+      TradesIcon: _Components_Icons_outline__WEBPACK_IMPORTED_MODULE_2__.TradesIcon,
+      BookIcon: _Components_Icons_outline__WEBPACK_IMPORTED_MODULE_2__.BookIcon,
+      SupportIcon: _Components_Icons_outline__WEBPACK_IMPORTED_MODULE_2__.SupportIcon,
+      AnalysisIcon: _Components_Icons_outline__WEBPACK_IMPORTED_MODULE_2__.AnalysisIcon,
       SidebarCollapsible: _Components_Sidebar_SidebarCollapsible__WEBPACK_IMPORTED_MODULE_3__["default"],
       SidebarCollapsibleItem: _Components_Sidebar_SidebarCollapsibleItem__WEBPACK_IMPORTED_MODULE_4__["default"],
       TemplateIcon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_6__["default"],
@@ -24184,7 +24192,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarLink"], {
-        title: "Dashboard",
+        title: "Gerênciamento",
         href: _ctx.route('dashboard'),
         active: _ctx.route().current('dashboard')
       }, {
@@ -24199,12 +24207,108 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
       }, 8
       /* PROPS */
+      , ["href", "active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarLink"], {
+        title: "Desempenho",
+        href: _ctx.route('analysis.index'),
+        active: _ctx.route().current('analysis')
+      }, {
+        icon: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["AnalysisIcon"], {
+            "class": "flex-shrink-0 w-6 h-6",
+            "aria-hidden": "true"
+          })];
+        }),
+        _: 1
+        /* STABLE */
+
+      }, 8
+      /* PROPS */
+      , ["href", "active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarLink"], {
+        title: "Carteiras",
+        href: _ctx.route('wallet.index'),
+        active: _ctx.route().current('wallet')
+      }, {
+        icon: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["WalletsIcon"], {
+            "class": "flex-shrink-0 w-6 h-6",
+            "aria-hidden": "true"
+          })];
+        }),
+        _: 1
+        /* STABLE */
+
+      }, 8
+      /* PROPS */
+      , ["href", "active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarLink"], {
+        title: "Transações",
+        href: _ctx.route('transaction.index'),
+        active: _ctx.route().current('transaction')
+      }, {
+        icon: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["TransactionIcon"], {
+            "class": "flex-shrink-0 w-6 h-6",
+            "aria-hidden": "true"
+          })];
+        }),
+        _: 1
+        /* STABLE */
+
+      }, 8
+      /* PROPS */
+      , ["href", "active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarLink"], {
+        title: "Trades",
+        href: _ctx.route('trade.index'),
+        active: _ctx.route().current('trades')
+      }, {
+        icon: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["TradesIcon"], {
+            "class": "flex-shrink-0 w-6 h-6",
+            "aria-hidden": "true"
+          })];
+        }),
+        _: 1
+        /* STABLE */
+
+      }, 8
+      /* PROPS */
+      , ["href", "active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarLink"], {
+        title: "Book Trade",
+        href: _ctx.route('book.index'),
+        active: _ctx.route().current('book')
+      }, {
+        icon: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BookIcon"], {
+            "class": "flex-shrink-0 w-6 h-6",
+            "aria-hidden": "true"
+          })];
+        }),
+        _: 1
+        /* STABLE */
+
+      }, 8
+      /* PROPS */
+      , ["href", "active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarLink"], {
+        title: "Suporte",
+        href: _ctx.route('support.index'),
+        active: _ctx.route().current('support')
+      }, {
+        icon: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SupportIcon"], {
+            "class": "flex-shrink-0 w-6 h-6",
+            "aria-hidden": "true"
+          })];
+        }),
+        _: 1
+        /* STABLE */
+
+      }, 8
+      /* PROPS */
       , ["href", "active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarCollapsible"], {
-        title: "Components",
+        title: "Ferramentas",
         active: _ctx.route().current('components.*')
       }, {
         icon: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["TemplateIcon"], {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CogIcon"], {
             "class": "flex-shrink-0 w-6 h-6",
             "aria-hidden": "true"
           })];
@@ -24223,14 +24327,49 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
       }, 8
       /* PROPS */
-      , ["active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarLink"], {
-        external: "",
-        title: "Figma File",
-        href: "https://www.figma.com/community/file/1019844542917981418",
-        target: "_blank"
+      , ["active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarCollapsible"], {
+        title: "Administração",
+        active: _ctx.route().current('components.*')
       }, {
         icon: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["FigmaIcon"], {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SecureIcon"], {
+            "class": "flex-shrink-0 w-6 h-6",
+            "aria-hidden": "true"
+          })];
+        }),
+        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarCollapsibleItem"], {
+            href: _ctx.route('components.buttons'),
+            title: "Usuarios",
+            active: _ctx.route().current('components.buttons')
+          }, null, 8
+          /* PROPS */
+          , ["href", "active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarCollapsibleItem"], {
+            href: _ctx.route('components.buttons'),
+            title: "Planos",
+            active: _ctx.route().current('components.buttons')
+          }, null, 8
+          /* PROPS */
+          , ["href", "active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarCollapsibleItem"], {
+            href: _ctx.route('components.buttons'),
+            title: "Assinantes",
+            active: _ctx.route().current('components.buttons')
+          }, null, 8
+          /* PROPS */
+          , ["href", "active"])];
+        }),
+        _: 1
+        /* STABLE */
+
+      }, 8
+      /* PROPS */
+      , ["active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["SidebarLink"], {
+        title: "Suporte",
+        href: _ctx.route('support.index'),
+        active: _ctx.route().current('support')
+      }, {
+        icon: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["DashboardIcon"], {
             "class": "flex-shrink-0 w-6 h-6",
             "aria-hidden": "true"
           })];
@@ -24238,7 +24377,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         _: 1
         /* STABLE */
 
-      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Examples "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" \n        => External link example\n        <SidebarLink\n            title=\"Github\"\n            href=\"https://github.com/kamona-wd/kui-laravel-breeze\"\n            external\n            target=\"_blank\"\n        >\n        </SidebarLink>\n\n        => Collapsible examples\n        <SidebarCollapsible title=\"Users\" :active=\"$page.url.startsWith('/users')\">\n            <SidebarCollapsibleItem :href=\"route('users.index')\" title=\"List\" :active=\"$page.url === '/users/index'\" />\n            <SidebarCollapsibleItem :href=\"route('users.create')\" title=\"Create\" :active=\"$page.url === '/users/create'\" />\n        </SidebarCollapsible>\n\n        <SidebarCollapsible title=\"Users\" :active=\"usePage().url.value.startsWith('/users')\">\n            <template #icon>\n                <UserIcon\n                    class=\"flex-shrink-0 w-6 h-6\"\n                    aria-hidden=\"true\"\n                />\n            </template>\n\n            <SidebarCollapsibleItem :href=\"route('users.index')\" title=\"List\" :active=\"route().current('users.index')\" />\n            <SidebarCollapsibleItem :href=\"route('users.create')\" title=\"Create\" :active=\"route().current('users.create')\" />\n        </SidebarCollapsible>")];
+      }, 8
+      /* PROPS */
+      , ["href", "active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Examples "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" \n        => External link example\n        <SidebarLink\n            title=\"Github\"\n            href=\"https://github.com/kamona-wd/kui-laravel-breeze\"\n            external\n            target=\"_blank\"\n        >\n        </SidebarLink>\n\n        => Collapsible examples\n        <SidebarCollapsible title=\"Users\" :active=\"$page.url.startsWith('/users')\">\n            <SidebarCollapsibleItem :href=\"route('users.index')\" title=\"List\" :active=\"$page.url === '/users/index'\" />\n            <SidebarCollapsibleItem :href=\"route('users.create')\" title=\"Create\" :active=\"$page.url === '/users/create'\" />\n        </SidebarCollapsible>\n\n        <SidebarCollapsible title=\"Users\" :active=\"usePage().url.value.startsWith('/users')\">\n            <template #icon>\n                <UserIcon\n                    class=\"flex-shrink-0 w-6 h-6\"\n                    aria-hidden=\"true\"\n                />\n            </template>\n\n            <SidebarCollapsibleItem :href=\"route('users.index')\" title=\"List\" :active=\"route().current('users.index')\" />\n            <SidebarCollapsibleItem :href=\"route('users.create')\" title=\"Create\" :active=\"route().current('users.create')\" />\n        </SidebarCollapsible>")];
     }),
     _: 1
     /* STABLE */
@@ -24393,8 +24534,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     key: 0,
     href: $props.href,
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(['p-2 flex items-center gap-2 rounded-md transition-colors', {
-      'text-gray-500 hover:text-gray-700 hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-dark-eval-2': !$props.active,
-      'text-white bg-purple-500 shadow-lg hover:bg-purple-600': $props.active
+      'text-gray-400 hover:text-gray-700 hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-dark-eval-2': !$props.active,
+      'text-white bg-cyan-500 shadow-lg hover:bg-cyan-600': $props.active
     }])
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
@@ -25876,11 +26017,19 @@ var FigmaIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AnalysisIcon": () => (/* binding */ AnalysisIcon),
 /* harmony export */   "ArrowsInnerIcon": () => (/* binding */ ArrowsInnerIcon),
+/* harmony export */   "BookIcon": () => (/* binding */ BookIcon),
+/* harmony export */   "CogIcon": () => (/* binding */ CogIcon),
 /* harmony export */   "DashboardIcon": () => (/* binding */ DashboardIcon),
 /* harmony export */   "EmptyCircleIcon": () => (/* binding */ EmptyCircleIcon),
 /* harmony export */   "MenuFoldLineLeftIcon": () => (/* binding */ MenuFoldLineLeftIcon),
-/* harmony export */   "MenuFoldLineRightIcon": () => (/* binding */ MenuFoldLineRightIcon)
+/* harmony export */   "MenuFoldLineRightIcon": () => (/* binding */ MenuFoldLineRightIcon),
+/* harmony export */   "SecureIcon": () => (/* binding */ SecureIcon),
+/* harmony export */   "SupportIcon": () => (/* binding */ SupportIcon),
+/* harmony export */   "TradesIcon": () => (/* binding */ TradesIcon),
+/* harmony export */   "TransactionIcon": () => (/* binding */ TransactionIcon),
+/* harmony export */   "WalletsIcon": () => (/* binding */ WalletsIcon)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
@@ -25979,6 +26128,162 @@ var EmptyCircleIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
         "stroke-width": "2",
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
+      }, null)]);
+    };
+  }
+});
+var SecureIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "SecureIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+      }, null)]);
+    };
+  }
+});
+var CogIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "CogIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+      }, null), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+      }, null)]);
+    };
+  }
+});
+var WalletsIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "WalletsIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+      }, null)]);
+    };
+  }
+});
+var TransactionIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "TransactionIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+      }, null)]);
+    };
+  }
+});
+var TradesIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "TradesIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+      }, null)]);
+    };
+  }
+});
+var BookIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "BookIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+      }, null)]);
+    };
+  }
+});
+var SupportIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "SupportIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+      }, null)]);
+    };
+  }
+});
+var AnalysisIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "AnalysisIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
       }, null)]);
     };
   }
