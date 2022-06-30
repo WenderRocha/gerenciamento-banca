@@ -8,7 +8,7 @@
             {
                 'text-gray-400 hover:text-gray-700 hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-dark-eval-2':
                     !active,
-                'text-white bg-cyan-500 shadow-lg hover:bg-cyan-600':
+                'text-white bg-cyan-700 shadow-lg hover:bg-cyan-800':
                     active,
             },
         ]"
