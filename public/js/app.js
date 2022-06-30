@@ -25795,20 +25795,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
-};
-
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
-  "class": "text-xl font-semibold leading-tight"
-}, " Dashboard ", -1
-/* HOISTED */
-);
-
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Star on Github", -1
-/* HOISTED */
-);
-
-var _hoisted_4 = {
   "class": "p-6 overflow-hidden bg-white rounded-md shadow-md dark:bg-dark-eval-1"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -25816,29 +25802,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     title: "Dashboard"
   }, {
     header: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Button"], {
-        external: "",
-        variant: "black",
-        target: "_blank",
-        "class": "items-center gap-2 max-w-xs",
-        href: "https://github.com/kamona-wd/kui-laravel-breeze"
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function (_ref) {
-          var iconSizeClasses = _ref.iconSizeClasses;
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["GithubIcon"], {
-            "aria-hidden": "true",
-            "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(iconSizeClasses)
-          }, null, 8
-          /* PROPS */
-          , ["class"]), _hoisted_3];
-        }),
-        _: 1
-        /* STABLE */
-
-      })])];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("\r\n            <div class=\"flex flex-col gap-4 md:flex-row md:items-center md:justify-between\">\r\n                <h2 class=\"text-xl font-semibold leading-tight\">\r\n                    Dashboard\r\n                </h2>\r\n\r\n                <Button external variant=\"black\" target=\"_blank\" class=\"items-center gap-2 max-w-xs\" v-slot=\"{ iconSizeClasses }\" href=\"https://github.com/kamona-wd/kui-laravel-breeze\">\r\n                    <GithubIcon aria-hidden=\"true\" :class=\"iconSizeClasses\" />\r\n                    <span>Star on Github</span>\r\n                </Button>\r\n            </div>")];
     }),
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["FirstComponent"])])];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["FirstComponent"])])];
     }),
     _: 1
     /* STABLE */
