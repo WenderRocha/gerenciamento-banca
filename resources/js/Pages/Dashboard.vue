@@ -14,7 +14,7 @@
         </template>
 
         <div class="p-6 overflow-hidden bg-white rounded-md shadow-md dark:bg-dark-eval-1">
-            You're logged in!
+            <FirstComponent/>
         </div>
     </AuthenticatedLayout>
 </template>
@@ -23,4 +23,5 @@
 import AuthenticatedLayout from '@/Layouts/Authenticated'
 import Button from '@/Components/Button'
 import { GithubIcon } from '@/Components/Icons/brands'
+import FirstComponent from './Components/FirstComponent.vue';
 </script>
